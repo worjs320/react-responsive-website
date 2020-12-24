@@ -41,3 +41,9 @@
   color: #242424;
   transition: 250ms;
 }
+
+.mobile-active-page button {
+  background: #fff;
+  color: #242424;
+  border-radius: 2px;
+}
