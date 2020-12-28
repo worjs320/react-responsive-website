@@ -4,7 +4,6 @@ import Card from "@material-ui/core/Card";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import CardHeader from "@material-ui/core/CardHeader";
-import CssBaseline from "@material-ui/core/CssBaseline";
 import Grid from "@material-ui/core/Grid";
 import StarIcon from "@material-ui/icons/StarBorder";
 import Typography from "@material-ui/core/Typography";
@@ -112,7 +111,7 @@ export default function Pricing() {
             color="textPrimary"
             gutterBottom
           >
-            Pricing
+            Services
           </Typography>
           <Typography
             variant="h5"
@@ -120,9 +119,7 @@ export default function Pricing() {
             color="textSecondary"
             component="p"
           >
-            Quickly build an effective pricing table for your potential
-            customers with this layout. It&apos;s built with default Material-UI
-            components with little customization.
+            Service List
           </Typography>
         </Container>
         {/* End hero unit */}
@@ -134,8 +131,9 @@ export default function Pricing() {
                 item
                 key={tier.title}
                 xs={12}
-                sm={tier.title === "Enterprise" ? 12 : 6}
+                sm={12}
                 md={4}
+                maxWidth={false}
               >
                 <Card>
                   <CardHeader
